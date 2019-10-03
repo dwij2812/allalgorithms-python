@@ -19,7 +19,7 @@ def insertionSort(b):
         b[j + 1] = up      
     return b      
               
-def bucketSort(x): 
+def bucket_sort(x): 
     arr = [] 
     slot_num = 10 # 10 means 10 slots, each 
                   # slot's size is 0.1 
@@ -43,4 +43,4 @@ def bucketSort(x):
             k += 1
     return x
 
-# For using this make the function call bucketSort(data) where data is the array of the numbers to be sorted.
+# For using this make the function call bucket_sort(data) where data is the array of the numbers to be sorted.
