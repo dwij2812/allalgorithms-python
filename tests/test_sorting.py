@@ -8,7 +8,8 @@ from allalgorithms.sorting import (
     pigeonhole_sort,
     stooge_sort,
     cocktail_shaker_sort,
-    tree_sort
+    tree_sort,
+    bucket_sort
 )
 
 
@@ -36,6 +37,9 @@ class TestSorting(unittest.TestCase):
     
     def tree_sort(self):
         self.assertEqual([-44, 1, 2, 3, 7, 19], tree_sort([7, 3, 2, 19, -44, 1]))
+        
+    def bucket_sort(self):
+        self.assertEqual([-44, 1, 2, 3, 7, 19], bucket_sort([7, 3, 2, 19, -44, 1]))
 
 
 if __name__ == "__main__":
